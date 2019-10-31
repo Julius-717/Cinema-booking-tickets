@@ -15,19 +15,19 @@ var apps = angular.module('adminApp',[]).controller('dashboardctrl', function($s
 	];
 
 	$scope.movies=[
-		{movieid:"0001",moviename:"Aval"},
-		{movieid:"0001",moviename:"Blade Runner"},
-		{movieid:"0001",moviename:"Geostorm"},
-		{movieid:"0001",moviename:"Golmaal Again"},
-		{movieid:"0001",moviename:"ITTEFAQ"},
-		{movieid:"0001",moviename:"Mersal"},
-		{movieid:"0001",moviename:"PSV Garuda Vega"},
-		{movieid:"0001",moviename:"Raja The Great"},
-		{movieid:"0001",moviename:"Secret Superstar"},
-		{movieid:"0001",moviename:"Solo"},
-		{movieid:"0001",moviename:"The Foreigner"},
-		{movieid:"0001",moviename:"Thor Ragnarok"},
-		{movieid:"0001",moviename:"Villain"}
+		{movieid:"0001",moviename:"Titanic"},
+		{movieid:"0001",moviename:"Sonic"},
+		{movieid:"0001",moviename:"Maleficent"},
+		{movieid:"0001",moviename:"Joker"},
+		{movieid:"0001",moviename:"Hellboy"},
+		{movieid:"0001",moviename:"Dark phoenix"},
+		{movieid:"0001",moviename:"Endgame"},
+		{movieid:"0001",moviename:"Aladdin"},
+		{movieid:"0001",moviename:"Charlie`s angels"},
+		{movieid:"0001",moviename:"Birds of prey"},
+		{movieid:"0001",moviename:"Gemini man"},
+		{movieid:"0001",moviename:"Hobbs & Shaw"},
+		{movieid:"0001",moviename:"Angel has fallen"}
 	];
 
 	$scope.multiplexs=[

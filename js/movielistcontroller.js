@@ -4,7 +4,7 @@ app.controller('moviesCtrl',['$scope', function($scope,filterFilter,$http) {
 
     $scope.selectedLang = { movielanguage:"" };
     $scope.recordDetails= undefined;
-    $scope.languageslist = ["English", "Hindi","Kannada","Malayalam","Tamil", "Telugu"];
+    $scope.languageslist = ["English"];
     $scope.movieslist= [
         {"movieId": "0001", "moviename" : "Aval", "imageurl" : "http://bit.ly/2hZVKQX", "movielanguage":"Tamil" },
         {"movieId": "0002", "moviename" : "Blade Runner", "imageurl" : "http://bit.ly/2zLHVQA", "movielanguage":"English" },

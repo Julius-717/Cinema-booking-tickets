@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0;}
 
 body {
-<!-- src: http://subtlepatterns.com/?p=1045 -->
+ src: "http://subtlepatterns.com/?p=1045";
 background: url('dark_geometric.png');
 }
 
@@ -40,7 +40,7 @@ width: 3550px;
        animation: bannermove 30s linear infinite;
 }
 
-@keyframes "bannermove" {
+@keyframes bannermove {
 0% {
    margin-left: 0px;
 }
@@ -60,7 +60,7 @@ width: 3550px;
 
 }
 
-@-webkit-keyframes "bannermove" {
+@-webkit-keyframes bannermove {
 0% {
   margin-left: 0px;
 }
@@ -70,7 +70,7 @@ width: 3550px;
 
 }
 
-@-ms-keyframes "bannermove" {
+@-ms-keyframes bannermove {
 0% {
   margin-left: 0px;
 }
@@ -80,7 +80,7 @@ width: 3550px;
 
 }
 
-@-o-keyframes "bannermove" {
+@-o-keyframes bannermove {
 0% {
   margin-left: 0px;
 }

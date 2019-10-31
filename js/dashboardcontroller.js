@@ -3,15 +3,15 @@ var apps = angular.module('adminApp',[]).controller('dashboardctrl', function($s
 	$scope.totalsales=1560000;
 	$scope.totaloccupancy=5986;
 	$scope.salesdetails=[
-		{multiplex:"LUXE",screens:"SCREEN1", movies:"RAGANAROK", sales:20000, occupancy:200},
-		{multiplex:"LUXE",screens:"SCREEN2", movies:"MERSAL", sales:12000, occupancy:160},
-		{multiplex:"LUXE",screens:"SCREEN3", movies:"VIKRAM VEDHA", sales:18000, occupancy:220},
-		{multiplex:"SATYAM",screens:"SCREEN1", movies:"RAGANAROK", sales:10000, occupancy:180},
-		{multiplex:"SATYAM",screens:"SCREEN2", movies:"MERSAL", sales:10000, occupancy:170},
-		{multiplex:"SATYAM",screens:"SCREEN3", movies:"VIKRAM VEDHA", sales:10000, occupancy:200},
-		{multiplex:"PALAZO",screens:"SCREEN1", movies:"RAGANAROK", sales:8000, occupancy:200},
-		{multiplex:"PALAZO",screens:"SCREEN2", movies:"MERSAL", sales:8000, occupancy:200},	
-		{multiplex:"PALAZO",screens:"SCREEN3", movies:"VIKRAM VEDHA", sales:8000, occupancy:200},
+		{multiplex:"20TH CENTURY",screens:"SCREEN1", movies:"JOKER", sales:20000, occupancy:200},
+		{multiplex:"20TH CENTURY",screens:"SCREEN2", movies:"HOBBS & SHAW", sales:12000, occupancy:160},
+		{multiplex:"20TH CENTURY",screens:"SCREEN3", movies:"ANGEL HAS FALLEN", sales:18000, occupancy:220},
+		{multiplex:"ANGA DIAMOND",screens:"SCREEN1", movies:"JOKER", sales:10000, occupancy:180},
+		{multiplex:"ANGA DIAMOND",screens:"SCREEN2", movies:"HOBBS & SHAW", sales:10000, occupancy:170},
+		{multiplex:"ANGA DIAMOND",screens:"SCREEN3", movies:"ANGEL HAS FALLEN", sales:10000, occupancy:200},
+		{multiplex:"ANGA SKY",screens:"SCREEN1", movies:"JOKER", sales:8000, occupancy:200},
+		{multiplex:"ANGA SKY",screens:"SCREEN2", movies:"HOBBS & SHAW", sales:8000, occupancy:200},	
+		{multiplex:"ANGA SKY",screens:"SCREEN3", movies:"ANGEL HAS FALLEN", sales:8000, occupancy:200},
 	];
 
 	$scope.movies=[

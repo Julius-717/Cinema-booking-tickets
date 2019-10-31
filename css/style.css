@@ -32,7 +32,7 @@
 	display: inline;
 	padding: 10px;
     margin-left: -10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .greycolor {
@@ -55,7 +55,7 @@
 }
 
 .buttonpad {
-	padding-left: 
+	padding-left: 0px;
 }
 
 .middletxt {

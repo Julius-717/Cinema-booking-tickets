@@ -15,14 +15,14 @@ app.controller("showtimecontroller",function($scope){
     $scope.showtimes= ["Noon", "Matinee", "Evening", "Night"];
 
     $scope.movieslist= [
-      	{moviename: "Aval", movielanguage: "Tamil", cinemas:"Sathyam Cinemas", showtime:["5.30pm","3.30pm","10.10pm"], duration:"180mins"}, 
-		{moviename: "Mersal", movielanguage: "Tamil", cinemas:"Escape Cinemas", showtime:["10.30pm","6.30pm"], duration:"Tamil 150mins"},
-		{moviename: "Blade Runner", movielanguage: "English",cinemas:"Luxe Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"},
-		{moviename: "Villain", movielanguage: "Malayalam",cinemas:"Luxe Cinemas", showtime:["2.30pm","3.30pm","12.30pm"], duration:"190mins"},
-		{moviename: "PSV Garuda Vega", movielanguage: "Telugu", cinemas:"Kamala Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
-		{moviename: "Raja The Great", movielanguage: "Telugu", cinemas:"SATHYAM", showtime:["12.30pm","3.30pm"], duration:"120mins"},
-		{moviename: "Thor: Ragnarok", movielanguage: "English", cinemas:"PVR Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
-		{moviename: "Secret Superstar", movielanguage: "Hindi", cinemas:"Palazzo Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"}
+      	{moviename: "Joker", movielanguage: "Tamil", cinemas:"Anga Sky Cinemas", showtime:["5.30pm","3.30pm","10.10pm"], duration:"180mins"}, 
+		{moviename: "Sonic", movielanguage: "Tamil", cinemas:"Anga Diamond Cinemas", showtime:["10.30pm","6.30pm"], duration:"150mins"},
+		{moviename: "Maleficent", movielanguage: "English",cinemas:"20th Century Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"},
+		{moviename: "Hellboy", movielanguage: "Malayalam",cinemas:"20th Century Cinemas", showtime:["2.30pm","3.30pm","12.30pm"], duration:"190mins"},
+		{moviename: "Darkphoenix", movielanguage: "Telugu", cinemas:"Garden City Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
+		{moviename: "Endgame", movielanguage: "Telugu", cinemas:"Prestige Plaza Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"},
+		{moviename: "AAladdin", movielanguage: "English", cinemas:"Junction Mall Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
+		{moviename: "Angel has falle", movielanguage: "English", cinemas:"Anga Sky Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"}
 	];
 
     $scope.showDetails = function (record) {

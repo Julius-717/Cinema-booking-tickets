@@ -9,9 +9,9 @@ app.controller("showtimecontroller",function($scope){
 
     $scope.filterObject = { moviename : "", movielanguage :"", cinemas : "", showtime :""};    
     $scope.recordDetails= undefined;
-    $scope.movies= ["Aval", "Blade Runner", "Geostorm","Golmaal Again","ITTEFAQ","Mersal","PSV Garuda Vega","Raja The Great","Secret Superstar","Solo","The Foreigner","Thor: Ragnarok","Villain"];
-    $scope.languageslist= ["English", "Hindi","Kannada","Malayalam","Tamil", "Telugu"];
-    $scope.cinemas= ["Palazzo Cinemas", "Escape Cinemas", "PVR Cinemas", "Kamala Cinemas", "Sathyam Cinemas", "Luxe Cinemas"];
+    $scope.movies= ["Titanic", "Sonic", "Maleficent","Joker","Hellboy","Darkphoenix","Endgame","Aladdin","Charlie`s angels","Birds of prey","Gemini man","Hobbs & Shaw","Angel has fallen"];
+    $scope.languageslist= ["English",];
+    $scope.cinemas= ["20th century Cinemas", "Anga Diamond Cinemas", "Anga Sky Cinemas", "Garden City Cinemas", "Junction Mall Cinemas", "Prestige Plaza Cinemas"];
     $scope.showtimes= ["Noon", "Matinee", "Evening", "Night"];
 
     $scope.movieslist= [

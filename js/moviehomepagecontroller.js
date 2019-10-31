@@ -9,7 +9,7 @@ var apps= angular.module('myApp').controller('movieHomeCTRL',function($scope){
 
     $scope.filterObject = { cinemas : "", showtime : "" };    
     $scope.recordDetails= undefined;
-    $scope.cinemas= ["Palazzo Cinemas", "Escape Cinemas", "PVR Cinemas", "Kamala Cinemas", "Sathyam Cinemas", "Luxe Cinemas"];
+    $scope.cinemas= ["20th century Cinemas", "Anga Diamond Cinemas", "Anga Sky Cinemas", "Garden City Cinemas", "Junction Mall Cinemas", "Prestige Plaza Cinemas"];
     $scope.showtimes= ["Noon", "Matinee", "Evening", "Night"];
     
     $scope.movieDetails = 

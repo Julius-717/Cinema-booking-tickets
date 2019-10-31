@@ -1,0 +1,261 @@
+<div ng-app="myApp" ng-controller="foodcontroller">
+     <div class="container-fluid">
+        <div class="row food-row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-lg-4 col-xs-2">
+                    <img class="foodicon" src="images/foodicon.png"><span class="food-font">Food</span>
+                </div>
+                <div class="col-lg-2 col-xs-3 lgborder">
+                    <div class="itemsfont">Total Items</div>
+                    <div class="itemsfont">0</div>
+                </div>
+                <div class="col-lg-4 col-xs-4">
+                    <div class="itemsfont">Food Total Amount</div>
+                    <div class="itemsfont">&#8377; 0</div>
+                </div>
+                <div class="col-lg-2 col-xs-3">
+                  <div class="bookbtn">
+                  <a href="#!/ticket"><button type="button" class="btn btn-default proceedbtn">Proceed</button></a>
+                  </div>  
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    <div class="foodcontent whitebg padd20">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" data-target="#home" ng-click="seletedTab=1;">DRINKS</a></li>
+    <li><a data-toggle="tab" data-target="#menu1" ng-click="seletedTab=2;">SNACKS</a></li>
+    <li><a data-toggle="tab" data-target="#menu2" ng-click="seletedTab=3;">CHAT</a></li>
+    <li><a data-toggle="tab" data-target="#menu3" ng-click="seletedTab=4;">COMBO</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active" ng-class="{'active': selectedTab===1}">
+       <div class="row">
+        <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-cappuccino-premium.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+        </div>
+            
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-coke-regular-650-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+        </div>
+            
+            
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-maaza-400-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="menu1" class="tab-pane fade" ng-class="{'active': selectedTab===2}">
+      <div class="row">
+        <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-cappuccino-premium.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+        </div>
+            
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-coke-regular-650-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+           <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+        </div>
+      
+
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-maaza-400-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="menu2" class="tab-pane fade" ng-class="{'active': selectedTab===3}">
+      <div class="row">
+        <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-cappuccino-premium.png" >
+            <div class="foodname">cappuccino</div>
+            <div class="foodprice">&#8377; 110</div>
+           <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+        </div>
+     
+            
+            
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-maaza-400-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+           <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+            </div>
+
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-maaza-400-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="menu3" class="tab-pane fade" ng-class="{'active': selectedTab===4}">
+      <div class="row">
+        <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-cappuccino-premium.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+           <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+        </div>
+
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-maaza-400-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+           <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+            </div>
+
+            <div ng-repeat="x in records">
+            <div class="col-lg-3 col-xs-6 foodpad">
+            <img class="foodimg img-responsive" src="images/drinks/vertical-maaza-400-ml.png" >
+                <div class="foodname">cappuccino</div>
+                <div class="foodprice">&#8377; 110</div>
+            <div class="foodbtn">
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodsub()">
+                <i class="glyphicon glyphicon-minus"></i>
+            </button>
+            <span> {{count}} </span>
+            <button type="button" class="btn btn-info btn-circle btn-lg" ng-click="foodadd()">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,80 @@
+<div class="container-fluid black"  ng-controller="showtimecontroller">
+
+    <h2 class="spfont whitefont col-xs-12">Book Movie Tickets</h2>
+
+    <div class="row greycolor mainpadd">
+
+        <div class="col-lg-3 col-md-3 middletxt">
+            <span class="whitefont ticket">TICKETS > </span>
+            <select class="selectpicker " data-style="btn-info">
+                <option>1</option>
+                <option ng-selected="val">2</option>
+                <option>3</option>    
+                <option>4</option> 
+                <option>5</option> 
+                <option>6</option> 
+                <option>7</option> 
+                <option>8</option> 
+                <option>9</option> 
+                <option>10</option>
+            </select>
+        </div>
+    
+
+        <div class="col-lg-7 col-md-7">
+            <ul class="list-inline date">
+                <span class="whitefont">DATE ></span>
+                <li class="active"><a href="" class="btn btn-info">{{ today | date: "EEE"}}<br>{{ today | date: "dd" }}</a></li>
+                <li><a href="" class="btn btn-info bluebutton">{{ seconddate | date: "EEE"}} <br>{{ seconddate | date: "dd" }}</a></li>
+                <li><a href="" class="btn btn-info bluebutton">{{ thirddate | date: "EEE"}} <br>{{ thirddate | date: "dd" }}</a></li>
+                <li><a href="" class="btn btn-info bluebutton">{{ fourthdate | date: "EEE"}} <br>{{ fourthdate | date: "dd" }}</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 col-md-12 padd0" id="mon">
+            <nav class="navbar navbar-inverse mar0">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                        <li class="dropdown col-lg-3 col-md-3 col-sm-3 col-xs-6 padd0">                            
+                            <select class="dropbox" ng-options="option for option in movies" ng-model="filterObject.moviename">
+                                <option label="Select Movie" disabled="disabled" hidden="true"></option>
+                            </select>
+                        </li>
+
+                        <li class="dropdown col-lg-2 col-md-3 col-sm-3 col-xs-6 padd0">
+                            <select class="dropbox" ng-options="option for option in languageslist" ng-model="filterObject.movielanguage">
+                                <option label="Select Language" disabled="disabled" hidden="true"></option>
+                            </select>
+                        </li>
+
+                        <li class="dropdown col-lg-2 col-md-3 col-sm-3 col-xs-6 padd0">
+                            <select class="dropbox" ng-options="option for option in cinemas" ng-model="filterObject.cinemas">
+                                <option label="Select Cinemas" disabled="disabled" hidden="true"></option>
+                            </select>
+                        </li>
+
+                        <li class="dropdown col-lg-5 col-md-3 col-sm-3 col-xs-6 padd0">                            
+                            <select class="dropbox" ng-options="option for option in showtimes" ng-model="filterObject.showtime">
+                                <option label="select Showtime" disabled="disabled" hidden="true"></option>
+                            </select>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div class="container-fluid greycolor mar0" ng-repeat="record in movieslist | filter: filterObject">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 padd20" ng-click="showDetails(record)"><span class="whitefont ">{{record.moviename}}<br>{{record.duration}}</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 padd20"><span class="whitefont">{{record.movielanguage}}</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 padd20"><span class="whitefont">{{record.cinemas}}</span></div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 padd20"><a href="#!seats" class="whitefont mar10 btn btn-success greencolor" ng-repeat="showtime in record.showtime">{{showtime}}</a></div>
+        </div>
+
+    </div>
+
+</div>

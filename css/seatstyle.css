@@ -1,0 +1,395 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.seatview
+{
+    overflow: auto;
+}
+.whitebg{
+    background-color: white;
+}
+.bluebg{
+    background-color: #fff;
+}
+.rownum{
+    padding: 5px;
+    padding-right: 15px;
+}
+.seat-font{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+.ticket-font{
+    color: white;
+    font-size: 45px;
+   text-align: center;
+}
+.seatbg{
+    background-color: #333;
+}
+.ticktfont2{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.seatnum{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+.screen{
+    margin-top: 30px;
+max-width: 680px;
+
+}
+.completebtn{
+    float: right;
+    margin: 15px;
+}
+.tickfont{
+    font-size: 20px;
+    text-align: left;
+   font-weight: 600;
+}
+.lg2border{
+    border-right: 2px solid;
+    
+}
+.ticketbord{
+}
+.ticket-row{
+    border-bottom: 2px solid black;
+}
+.availability
+{
+    position: relative;
+    bottom:20px;
+    left: 70px;
+    
+}
+.seatpad{
+    padding: 5px;
+    width: 40px;
+    position: relative;
+}
+.seatavailable{
+    padding: 10px;
+    font-weight: 600;
+}
+.selectseat{
+    position: absolute;
+    top: 30px;
+    height: 30px;
+    width: 30px;
+}
+.ticketicon{
+    position: relative;
+    left: 10px;
+    top: -10px;
+    width: 45px;
+    height: 40px;
+}
+.seaticon{
+    position: absolute;
+    top: 15px;
+    padding-left: 5px;
+    width: 45px;
+    height: 40px;
+}
+.blueseat{
+    background-image: url(../images/seat2.jpg);
+}
+.spanning
+{
+    padding: 20px;
+    
+    text-align: center;
+}
+.seatview
+{
+    margin: 70px;
+    margin-top: 0px;
+    padding: 150px;
+    padding-bottom: 0px;
+    padding-top: 100px;
+
+}
+.plane {
+  
+  max-width: auto;
+    align-content: center;
+    background-color: white;
+    border: 2px solid black;
+   
+}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.seat {
+  display: flex;
+  position: relative;
+}
+.seat:nth-child(10) {
+  margin-right: 15%;
+}
+.seat input[type=checkbox] {
+  opacity:0;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+}
+.divseat{
+    display: block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 4px 0;
+    width: 30px;
+    height: 30px;background-color: transparent;
+  border-radius: 5px;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+margin-bottom: 20px;
+}
+
+.seat input[type=checkbox]:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.seat input[type=checkbox]:checked + label {
+    background-image: url(../images/seat2.jpg);
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    cursor: pointer;
+    border: none;
+ -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+    cursor: pointer;
+    
+    
+}
+.seat-selected {
+  background-image: url(../images/seat2.jpg);
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.seat input[type=checkbox]:disabled + label {
+  background-image: url(../images/seat.jpg);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.seat input[type=checkbox]:disabled + label:after {
+ 
+  text-indent: 0;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.seat input[type=checkbox]:disabled + label:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.seat input[type=checkbox]+ label {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 4px 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/seat1.jpg);
+    background-size: cover;
+  border-radius: 5px;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.seat label:before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 3px;
+} 
+.seat label:hover {
+  cursor: pointer;
+  background-image: url(../images/seat2.jpg);
+    animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+
+
+@media only screen and (max-width:768px) {
+  .container{
+
+    margin: 0px;
+  }
+.availability
+{
+    position: relative;
+    top: 10px;  
+}
+.seatavailable{
+    padding: 10px;
+    font-weight: 100;
+}
+    .seat label {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 4px 0;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/seat1.jpg);
+    background-size: cover;
+  border-radius: 5px;
+
+}
+    .tickfont{
+    font-size: 15px;
+    text-align: left;
+   font-weight: 600;
+}
+    .tickfont1{
+        font-size: 10px;
+    }
+    .ticktfont2{
+        font-size: 10px;
+        padding: 0px;
+    }
+.screen{
+    margin-top: 30px;
+max-width: 480px;
+
+}
+.seatview
+{
+    margin: 20px;
+    padding: 20px;
+}
+    .seatnum{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-weight: bold;
+    
+}
+
+}

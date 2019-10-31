@@ -1,0 +1,233 @@
+.dropdown {
+    position: relative;
+    margin-top: 12px;
+    color: #000;
+}
+
+.filterdrop>li>a:hover{
+    background-color: #5bc0de;
+}
+
+.header-nightsky .navbar-nav>li {
+    margin-right: 0px;
+}
+
+.logbtn {
+    color: #fff;
+     background-color: transparent;
+     border: none;
+}
+
+.contbtn {
+    width: auto;
+    border: none;
+    
+}
+
+.ticket {
+    padding-right: 10px;
+}
+
+.disinline {
+	display: inline;
+	padding: 10px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.greycolor {
+	background-color: #333;
+    border: thin solid black
+}
+
+.whitefont {
+
+	color: white;
+}
+
+.greencolor {
+  background-color: #25A92F;
+}
+
+.bluebutton {
+    background-color: transparent;
+    border: none;
+}
+
+.buttonpad {
+	padding-left: 
+}
+
+.middletxt {
+	padding: 20px;
+}
+
+.padd0 {
+	padding: 0px;
+}
+
+.navstyle {
+  margin-bottom: 0px;
+  border:0px;
+}
+
+.paddright80 {
+	padding-right: 80px;
+}
+
+.mar0 {
+	margin: 0px;
+}
+
+.mar10 {
+	margin:10px;
+}
+
+.marleft150 {
+	margin-left:150px;
+}
+
+
+.paddright40 {
+	padding-right: 250px;
+}
+
+.padd10 {
+	padding: 10px;
+    font-size: 15px;
+    background-color: #5bc0de;
+    
+}
+
+.padd20 {
+	padding: 10px;
+}
+
+.centeralign {
+	text-align: center;
+}
+
+.spfont {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.paddright10 {
+	padding-right: 10px;
+}
+
+.black {
+	background-color: black;
+
+}
+
+.locationword {
+    font-size: 10px;
+}
+
+p {
+	font-size: 15px;
+
+}
+
+.cinemas_1 {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.part_one {
+	border-color: yellow;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+
+.ci li {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+@media screen and (max-width : 480px) { 
+    .photoncinemas{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .cinemas_1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-indicators li {
+        display: inline-block;
+        width: 50px;
+        height: 7px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+
+    .date{
+        margin: 10px;
+    }
+
+    .disinline {
+    	display: inline;
+    	padding: 2 0px;
+        
+    }
+
+    .ticketc {
+        padding-top: 10px;
+    }
+
+    .carousel-indicators .active {
+        width: 50px;
+        height: 7px;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .poster{
+        height: 200px;
+        width: 135px;
+    }
+}
+
+@media all and (min-width : 480px) { 
+    .carousel-indicators li {
+        display: inline-block;
+        width: 100px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+    
+
+    .carousel-indicators .active {
+        width: 100px;
+        height: 10px;
+        margin: 0;
+        background-color: #fff;
+    }
+
+}

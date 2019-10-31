@@ -1,0 +1,83 @@
+<div class="container-fluid padd0" ng-controller="seatcontroller">
+        <div class="container-fluid bluebg">
+        <div class="row ticket-row">
+        <div class="col-lg-12  seatbg ticketbord">
+            <span class="ticket-font">Tickets</span><img class="ticketicon" src="images/ticketwhite.png">
+        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-lg-2 col-xs-3 lg2border">
+                <div class="tickfont">MOVIE</div>
+                <div class="tickfont1">MERSAL </div>
+                <div class="tickfont1">(A)TAMIL</div>
+                </div>
+                <div class="col-lg-2  col-xs-3 lg2border">
+                <div class="tickfont">WHEN</div>
+                <div class="tickfont1">19-06-2018</div>
+                <div class="tickfont1">TUESDAY</div>
+                </div>
+                <div class="col-lg-2 col-xs-3 lg2border">
+                <div class="tickfont">CINEMA</div>
+                <div class="tickfont1">SATHYAM</div>
+                <div class="tickfont1">SCREEN-1</div>
+                </div>
+                <div class="col-lg-2 hidden-xs lg2border">
+                <div class="tickfont">Quantity</div>
+                <div class="ticktfont2 ">2</div>
+                </div>
+                <div class="col-lg-2 hidden-xs lg2border">
+                <div class="tickfont">CLASS</div>
+                <div class="tickfont1 ">ELITE</div>
+                <div class="tickfont1 ">&#8377; 160.0</div>
+                </div>
+                <div class="col-lg-2 col-xs-3 ">
+                <div class="tickfont">Total Amount</div>
+                <div class="ticktfont2 ">&#8377; 376.00</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+            
+    
+        <div class="col-lg-12 col-xs-12 whitebg padd0">
+                <div class="col-lg-2 col-xs-6 seatbg">
+                <span class="seat-font">Seats</span><img class="seaticon" src="images/whiteseat.png">
+                </div>
+                <div class="col-lg-8 col-xs-2">
+                <div class="seatnum">Q1,Q2</div>
+                </div>
+                <div class="col-lg-2 col-xs-4">
+                <div class="completebtn">
+                <a href="#!/food"><button type="button" class="btn btn-primary">Next</button></a>
+                </div>  
+                </div>
+        </div>
+
+
+        <div class="row">
+        <div class="col-xs-12 col-lg-12">
+        <div class="plane scrollmenu">
+        <div class="seatview">
+             <div class="availability">
+             <span class="seatavailable"><img class="seatpad" src="images/seat1.jpg"> AVAILABLE SEATS</span>
+             <span class="seatavailable"><img class="seatpad" src="images/seat2.jpg">SELECTED SEATS</span>
+             <span class="seatavailable"><img class="seatpad" src="images/seat.jpg">UNAVAILABLE SEATS</span>
+             </div>
+        <ol class="cabin fuselage">
+            <li class="row" >
+            <ol class="seats" type="A" ng-repeat="items in seatslist">
+            <li class="seat" ng-repeat="seat in items" ng-click="seatSelection(seat)">
+            <input class="selectseat" ng-disabled="seat.isBooked" type="checkbox" ng-class="{'seat-selected': seat.isSelected}"/>
+            <label for=""></label>
+            </li>
+            </ol>
+            </li>
+       </ol>
+            <div> <img class="screen" src="images/screen-this-way.png"></div>     
+       </div>
+       </div>
+       </div>
+       </div>
+</div>
+   

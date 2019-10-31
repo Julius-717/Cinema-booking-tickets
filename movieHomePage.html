@@ -1,0 +1,94 @@
+    <div ng-controller="movieHomeCTRL">
+        <div class="greycolor">
+            <div class="container moviedetails whitefont">
+                <span class="movietitle">{{movieDetails.moviename}}</span>
+                <span class="movierating {{movieDetails.movierating}}">{{movieDetails.movierating}}</span>
+                <span class="movielang">({{movieDetails.movielanguage}})</span>
+            </div>
+            <img class="img-responsive" src="images/aval-poster.jpg" width="100%">
+            <div class="container-fluid details">
+                <div class="moviedes col-xs-12"><b>SYNOPSIS</b></div>
+                <div class="synopsis col-xs-12">{{movieDetails.moviesynopsis}}</div>
+
+                <div class="x col-xs-12">
+                    <span class="col-xs-1"><b>Genre:</b></span>
+                    <span class="col-xs-11">{{movieDetails.moviegenre}}</span>
+                </div>
+                <div class="x col-xs-12">
+                    <span class="col-xs-1"><b>Crew:</b></span>
+                    <span class="col-xs-11">{{movieDetails.moviecrew}}</span>
+                </div>
+                <div class="x col-xs-12">
+                    <span class="col-xs-1"><b>Cast:</b></span>
+                    <span class="col-xs-11">{{movieDetails.moviecast}}</span>
+                </div>
+                <div class="x col-xs-12">
+                    <div class="col-xs-1"><b>Duration:</b></div>
+                    <div class="col-xs-11">{{movieDetails.movieduration}} Minutes</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row greycolor mainpadd">
+
+            <div class="col-lg-3 col-md-3 middletxt">
+                <span class="whitefont ticket">TICKETS > </span>
+                <select class="selectpicker " data-style="btn-info">
+                    <option>1</option>
+                    <option ng-selected="val">2</option>
+                    <option>3</option>    
+                    <option>4</option> 
+                    <option>5</option> 
+                    <option>6</option> 
+                    <option>7</option> 
+                    <option>8</option> 
+                    <option>9</option> 
+                    <option>10</option>
+                </select>
+            </div>
+        
+
+            <div class="col-lg-7 col-md-7">
+                <ul class="list-inline date">
+                    <span class="whitefont">DATE ></span>
+                    <li><a href="#mon" class="btn btn-info">{{ today | date: "EEE"}}<br>{{ today | date: "dd" }}</a></li>
+                    <li><a href="#" class="btn btn-info bluebutton">{{ seconddate | date: "EEE"}} <br>{{ seconddate | date: "dd" }}</a></li>
+                    <li><a href="#" class="btn btn-info bluebutton">{{ thirddate | date: "EEE"}} <br>{{ thirddate | date: "dd" }}</a></li>
+                    <li><a href="#" class="btn btn-info bluebutton">{{ fourthdate | date: "EEE"}} <br>{{ fourthdate | date: "dd" }}</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-12 col-md-12 padd0" id="mon">
+                <nav class="navbar navbar-inverse mar0">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">                            
+
+                            <li class="dropdown col-lg-4 col-md-4 col-sm-4 col-xs-6 padd0">
+                                <select class="dropbox" ng-options="option for option in cinemas" ng-model="filterObject.cinemas">
+                                    <option label="Select Cinemas" disabled="disabled" hidden="true"></option>
+                                </select>
+                            </li>
+
+                            <li class="dropdown col-lg-8 col-md-8 col-sm-3 col-xs-6 padd0">                            
+                                <select class="dropbox" ng-options="option for option in showtimes" ng-model="filterObject.showtime">
+                                    <option label="select Showtime" disabled="disabled" hidden="true"></option>
+                                </select>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+            <div class="container-fluid greycolor mar0" ng-repeat="record in movielisting | filter: filterObject">                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padd20"><span class="whitefont">{{record.cinemas}}</span></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 padd20"><a href="#!seats" class="whitefont mar10 btn btn-success greencolor" ng-repeat="showtime in record.showtime">{{showtime}}</a></div>
+            </div>
+
+        </div>
+
+    </div>

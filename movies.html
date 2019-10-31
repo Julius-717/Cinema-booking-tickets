@@ -1,0 +1,40 @@
+<div class="movielist container-fluid" ng-controller="moviesCtrl">
+
+    <ul class="navbarPills nav nav-pills">
+        <li  class="active"><a data-toggle="tab" ng-click="selectedTab = 1;" data-target="#now-showing">Now Showing</a></li>
+        <li><a ng-click="selectedTab = 2;" data-toggle="tab" data-target="#coming-soon">Coming Soon</a></li>            
+    </ul>
+
+    <div class="tabContent tab-content">
+
+        <!--Now showing tab -->
+
+        <div id="now-showing" class="tab-pane fade in" ng-class="{'active': selectedTab===1}" ng-show="selectedTab === 1">
+
+            <div class="container languageSelect pull-right col-xs-12">
+                <select id="selectTitle" ng-options="option for option in languageslist" ng-model="selectedLang.movielanguage" multiple="multiple"></select>
+            </div>
+
+            <div class="">
+                <figure class="movie" ng-repeat="record in movieslist | filter: selectedLang">
+                    <a href="#!/movieHomePage" ng-click="showDetails(record)"><img height="300" width="192" class="poster" ng-src='{{record.imageurl}}' alt="{{record.moviename}} Image">
+                    <figcaption class="moviename">{{record.moviename}}</figcaption></a>
+                </figure>
+            </div>
+
+        </div>
+
+        <!-- Coming soon tab -->
+        <div id="coming-soon" class="tab-pane fade in" ng-class="{'active': selectedTab===2}" ng-show="selectedTab == 2">
+            <div>
+                <figure class="movie" ng-repeat="x in comingsoon | orderBy: x.moviename">
+                    <img height="300" width="192" class="poster" ng-src='{{x.imageurl}}' alt="{{x.moviename}} Image">
+                    <figcaption class="moviename whitefont">{{x.moviename}}</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

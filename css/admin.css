@@ -1,0 +1,85 @@
+.adminlogo{
+	padding-bottom: 10px;
+}
+
+.addition{
+	margin-top: 20px;
+	border: 1px groove #333;
+}
+
+.deletion{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.selectdel {
+	padding-top: 20px;
+}
+
+.moviepad{
+	padding-top: 20px;
+}
+
+.addbtn {
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+   	margin-bottom: 20px;
+}
+
+.shows {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.showtime{
+	margin-top: 10px;
+}
+
+.navbarPills{
+	margin-left: 15px;
+	padding-top: 10px;
+}
+
+.navbarPills>li.active>a, .navbarPills>li.active>a:focus, .navbarPills>li.active>a:hover {
+    color: #fff;
+    background-color: #26abe2;
+}
+
+.navbarPills>li>a {
+    color: #337ab7;
+    background-color: white;
+}
+
+.filterbar>li{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.blueborder {
+	border-color: skyblue;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+.logoutbtn{
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.totalsalestyle {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.adminbackground {
+	background-color: #8e8989;
+}
+
+.photonbackimage {
+    background: url("../images/Photon.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}

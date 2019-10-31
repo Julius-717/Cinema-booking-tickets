@@ -1,0 +1,207 @@
+.bookbtn{
+    float: right;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.foodbtn{
+    margin-left: 70px; 
+    margin-top: 20px;  
+}
+.nav-tabs{
+    cursor: pointer;
+}
+.btncolor
+{
+    background-color:#26abe2;
+}
+
+.foodname{
+    margin-left:60px;
+    text-transform: uppercase; 
+    font-size: 1.5625rem;
+}
+.minus{
+   padding-top: 3px;
+}
+.plus{
+    background-image: url(../images/plus.png);
+        width: 40px;
+    cursor: pointer;    background-size: cover;
+}
+.foodprice{
+    font-weight: 100;
+    font-size: 20px;
+    margin-left:80px;
+}
+.foodcontent{
+    padding-bottom: 40px;
+}
+.btn-circle.btn-lg {
+  width: 35px;
+  height: 35px;
+  padding: 6px 0px;
+  font-size: 17px;
+  line-height: 1.33;
+  border-radius: 20px;
+}
+.btn-circle.btn-lg:focus {
+    outline: none;
+}
+.foodimg:hover{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+/*food header*/
+.food-row{
+    background-color: #26abe2;
+}
+.food-font{
+    font-weight: 100;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+.foodicon {
+    vertical-align: text-bottom;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 05px;
+}
+.itemsfont{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+   
+}
+.lgborder{
+    border: 2px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+@media only screen and (max-width:768px){
+ 
+    .food-font{
+    font-weight: 100;
+    font-size: 15px;
+    padding: 0px;
+    color: white;
+}
+.foodicon{
+   vertical-align: text-bottom;
+    position: relative;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+
+}
+    .foodname{
+    margin-left:30px;
+    text-transform: uppercase; 
+    font-size: 1.5625rem;
+}
+    .foodprice {
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.itemsfont{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+   
+}
+     .foodimg{ 
+    width: 200px;
+    height: 150px;
+    }
+    
+    .foodpad{
+            padding: none !important;
+    }
+    
+    .foodbtn{
+    margin: 5px;
+    margin-left: 35px;
+}
+    .md-button.md-fab.md-mini {
+    line-height: 40px;
+    width: 40px;
+    height: 20px;
+    
+}
+    .foodtabs md-content md-tabs md-tab-content {
+     padding: 0px; 
+}
+    
+}
+@media only screen and (max-width:330px){
+    
+   .food-font{
+    font-weight: 100;
+    font-size: 13px;
+    padding: 0px;
+    color: white;
+}
+.foodicon{
+   vertical-align: text-bottom;
+    position: relative;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+
+}
+    .foodname {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 1.3625rem;
+}
+    .foodprice {
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 40px;
+}
+.itemsfont{
+    font-size: 13px;
+    color: white;
+    text-align: center;
+   
+}
+    .proceedbtn {
+    width: 60px;
+    font-size: x-small;
+}
+     .foodimg{ 
+    width: 200px;
+    height: 150px;
+    }
+    
+    .foodpad{
+            padding: none !important;
+    }
+    
+    .foodbtn{
+    margin: 5px;
+    margin-left: 20px;
+}
+    .md-button.md-fab.md-mini {
+    line-height: 40px;
+    width: 40px;
+    height: 20px;
+    
+}
+    .foodtabs md-content md-tabs md-tab-content {
+     padding: 0px; 
+}
+    
+}

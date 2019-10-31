@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Header-Nightsky.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="js/dashboardcontroller.js"></script>
+
+    <title>Photon Cinemas Admistration</title>
+    
+</head>
+
+<body ng-app="adminApp" class="adminbackground photonbackimage">
+
+    <div ng-controller="dashboardctrl" class="container">
+        <div class="header-nightsky">
+            <nav class="navbar navbar-default container">
+                <div class="container-fluid greycolor adminlogo">
+                    <div class="">
+                        <div class="col-lg-5 col-md-5">
+                            <a class="navbar-brand" href="#"><img src="images/phton.png" class="logo navbar-brand-adjust"/></a>
+                        </div>
+
+                        <div class="pull-right logoutbtn">
+                            <a href="index.html" type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-log-out"></span> Log out
+                            </a>                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Dashboard and add movie and Delete movie Tabs -->
+                            
+        <div  class="container-fluid">
+            <ul class="navbarPills nav nav-pills">
+                <li class="active"><a href="#dashboard" data-toggle="tab">Dashboard</a></li>
+                <li><a href="#addmovies" data-toggle="tab">Add Movies</a></li>
+                <li><a href="#deletemovies" data-toggle="tab">Delete Movies</a></li>
+            </ul>
+
+            <div class="pillContent tab-content">
+
+                <div class="tab-pane fade in active" id="dashboard">
+                    <h1 class="whitefont">Admin Dashboard</h1>
+                    <div class="padd0">
+                        <nav class="navbar navbar-inverse mar0">
+                            <div class="">
+                                <ul class="filterbar nav navbar-nav col-lg-12">
+                                    <li class="dropdown col-lg-3">
+                                        <a class="dropdown-toggle whitefont" data-toggle="dropdown">
+                                            <span class="whitefont">MULTIPLEX</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li><a href="#">Satyam</a></li>
+                                            <li><a href="#">Palazoo</a></li>
+                                            <li><a href="#">Luxe</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown col-lg-2">
+                                        <a class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="whitefont">SCREENS</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li><a href="#!dsadsa">Screen 1</a></li>
+                                            <li><a href="#!dsadsa">Screen 2</a></li>
+                                            <li><a href="#!dsadsa">Screen 3</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown col-lg-3">
+                                        <a class="dropdown-toggle whitefont" data-toggle="dropdown">
+                                            <span class="whitefont">MOVIES</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li><a href="#">Mersal</a></li>
+                                            <li><a href="#">Ghost Rider</a></li>
+                                            <li><a href="#">Kaththi</a></li>
+                                        </ul>
+                                    </li>
+
+
+
+                                    <li class="dropdown col-lg-2">
+                                        <a class="dropdown-toggle whitefont" data-toggle="dropdown">
+                                            <span class="whitefont">SALES</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li><a href="#">Daily Sale</a></li>
+                                            <li><a href="#">Weekly Sale</a></li>
+                                            <li><a href="#">Montly Sale</a></li>                                           
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown col-lg-2">
+                                        <a class="dropdown-toggle whitefont" data-toggle="dropdown">
+                                            <span class="whitefont">Occupancy</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li><a href="#">Daily Occupancy</a></li>
+                                            <li><a href="#">Weekly Occupancy</a></li>
+                                            <li><a href="#">Montly Occupancy</a></li>                                          
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+
+                    <div class="container-fluid greycolor padd0" ng-repeat="item in salesdetails">
+                        <div class="col-lg-3 padd20"><span class="whitefont">{{item.multiplex}}</span></div>
+                        <div class="col-lg-2 padd20"><span class="whitefont">{{item.screens}}</span></div>
+                        <div class="col-lg-3 padd20"><span class="whitefont">{{item.movies}}</span></div>
+                        <div class="col-lg-2 padd20"><span class="whitefont">{{item.sales}}</span></div>
+                        <div class="col-lg-2 padd20"><span class="whitefont">{{item.occupancy}}</span></div>                        
+                    </div>
+
+                    <div class="container-fluid"><i><h2 class="pull-right whitefont">Total Sale: {{totalsales}}</h2></i></div>
+                    <div class="container-fluid"><i><h2 class="pull-right whitefont">Total Occupancy: {{totaloccupancy}}</h2></i></div>
+                    
+                </div>
+
+
+                <!-- Adding Movies to database -->
+
+                <div id="addmovies" class="addition tab-pane fade in">
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Multiplex:</b></label>
+                        <select>
+                            <option selected disabled hidden>Select Multiplex</option>
+                            <option ng-repeat="x in multiplexs">{{x.multiplexname}}</option>                            
+                        </select>
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Movie Status:</b></label>
+                        <select>
+                            <option selected disabled hidden>Status</option>
+                            <option>Now Showing</option>
+                            <option>Coming Soon</option>                            
+                        </select>
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Screen ID: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Movie ID: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Movie Name: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Movie Synopsis: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Movie Language: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Genre: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Crew: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Cast: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Duration: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Image URL: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Poster URL: </b></label>
+                        <input type="text" ng-model="multid" name="multid" class="col-sm-6">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Start Date:</b></label>
+                        <input type="date" ng-model="multid" name="multid" class="col-sm-3">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>End Date:</b></label>
+                        <input type="date" ng-model="multid" name="multid" class="col-sm-3">
+                    </div>
+
+                    <div class="moviepad col-sm-12">
+                        <label for="multid" class="col-sm-3 control-label whitefont"><b>Show Times:</b></label>
+                        <ul class="shows col-sm-3">
+                            <li><input type="time" name="multid01" class="showtime col-sm-12"></li>
+                            <li><input type="time" name="multid02" class="showtime col-sm-12"></li>
+                            <li><input type="time" name="multid03" class="showtime col-sm-12"></li>
+                            <li><input type="time" name="multid04" class="showtime col-sm-12"></li>
+                            <li><input type="time" name="multid05" class="showtime col-sm-12"></li>
+                        </ul>
+                    </div>
+
+                    <div class="addbtn col-sm-9">
+                        <button class="btn btn-primary" id="Continue" type="submit">ADD</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Deletion Movies to database -->
+
+                <div id="deletemovies" class="deletion tab-pane fade in">
+                    <div class="padd0">
+                        <nav class="navbar navbar-inverse mar0">
+                            <div class="col-lg-12">                                
+                                <ul class="filterbar nav navbar-nav col-lg-12">
+                                    
+                                    <li class="dropdown col-lg-2">
+                                        <a class="dropdown-toggle whitefont" data-toggle="dropdown">
+                                            <span class="whitefont">MOVIE</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">                                            
+                                            <li ng-repeat="x in movies"><a href="#">{{x.moviename}}</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown col-lg-2">
+                                        <a class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="whitefont">MULTIPLEX</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li ng-repeat="x in multiplexs"><a href="#!dsadsa">{{x.multiplexname}}</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown col-lg-2">
+                                        <a class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="whitefont">SCREENS</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu col-lg-12">
+                                            <li><a href="#!dsadsa">Screen 1</a></li>
+                                            <li><a href="#!dsadsa">Screen 2</a></li>
+                                            <li><a href="#!dsadsa">Screen 3</a></li>
+                                            <li><a href="#!dsadsa">Screen 4</a></li>
+                                            <li><a href="#!dsadsa">Screen 5</a></li>
+                                        </ul>
+                                    </li>                                   
+
+                                </ul>
+
+                            </div>
+
+                        </nav>
+
+                        <div class="container-fluid greycolor padd0" ng-repeat="item in salesdetails">
+                            <div class="col-lg-2 padd20"><span class="whitefont">{{item.movies}}</span></div>
+                            <div class="col-lg-2 padd20"><span class="whitefont">{{item.multiplex}}</span></div>
+                            <div class="col-lg-2 padd20"><span class="whitefont">{{item.screens}}</span></div>
+                            <div class="col-lg-6">                                
+                                <ul class="list-unstyled col-lg-7">                                    
+                                    <li class="col-lg-4"><button class="btn btn-success"><input type="checkbox" name="">11:00</button></li>
+                                    <li class="col-lg-4"><button class="btn btn-success"><input type="checkbox" name="">5:30</button></li>
+                                    <li class="col-lg-4"><button class="btn btn-success"><input type="checkbox" name="">9:30</button></li>
+                                </ul>
+                               
+                                <div class="col-lg-2 whitefont padd20"><button class="btn-default">Edit</button></div>
+                                <div class="col-lg-3 whitefont padd20"><button class="btn-default">Delete</button></div>
+                            </div>                                               
+                        </div>
+
+                    </div>                          
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

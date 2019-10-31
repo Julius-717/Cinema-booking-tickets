@@ -1,0 +1,111 @@
+/* Movies tab CSS */
+
+.multiselect-container>li>a>label>input[type=radio], .multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 5px;
+    width: 20px;
+}
+
+.multiselect-container>li>a>label[type=radio] {
+    margin-bottom: 5px;
+    width: 20px;
+}
+
+.multiselect-container {
+	position: fixed;
+    width: 150px;
+    float: right;
+}
+
+.movielist{
+	background-color: #333;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.movie a, .movie a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.navbarPills{
+	margin-left: 15px;
+	padding-top: 10px;
+}
+
+.navbarPills>li.active>a, .navbarPills>li.active>a:focus, .navbarPills>li.active>a:hover {
+    color: #fff;
+    background-color: #26abe2;
+}
+
+.navbarPills>li>a {
+    color: #337ab7;
+    background-color: white;
+}
+
+.tabstyle{
+    
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.tabContent{
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 0px;
+}
+
+.coming-soon, .now-showing{
+	display: inline-block;
+}
+
+.movie {
+	position: relative;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+
+.moviename{
+	text-align: center;
+  	padding-bottom: 20px;
+  	padding-top: 10px;
+}
+
+
+
+.languageSelect {
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px){
+	.poster {
+	    height: 200px;
+	    width: 160px;
+	}
+}
+
+@media screen and (max-width: 468px){
+    .poster {
+	    height: 200px;
+	    width: 160px;
+	}
+}
+
+@media screen and (max-width: 380px){
+    .poster {
+	    height: 180px;
+	    width: 135px;
+	}
+}
+
+@media screen and (max-width: 320px){
+    .poster {
+	    height: 180px;
+	    width: 115px;
+	}
+}

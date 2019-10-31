@@ -31,11 +31,11 @@ var apps = angular.module('adminApp',[]).controller('dashboardctrl', function($s
 	];
 
 	$scope.multiplexs=[
-		{multiplexname:'Palazzo Cinemas'},
-		{multiplexname:'Escape Cinemas'}, 
-		{multiplexname:'PVR Cinemas'}, 
-		{multiplexname:'Kamala Cinemas'},
-		{multiplexname:'Sathyam Cinemas'},
-		{multiplexname:'Luxe Cinemas'}
+		{multiplexname:'20th century cinemas'},
+		{multiplexname:'Anga Diamond cinemas'}, 
+		{multiplexname:'Anga sky cinemas'}, 
+		{multiplexname:'Garden city cinemas'},
+		{multiplexname:'Junction mall cinemas'},
+		{multiplexname:'Prestige plaza Cinemas'}
 	];
 });

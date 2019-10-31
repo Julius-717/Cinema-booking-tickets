@@ -15,15 +15,15 @@ var apps= angular.module('myApp').controller('movieHomeCTRL',function($scope){
     $scope.movieDetails = 
         {
             movieId: 001,
-            moviename: 'Aval',
-            moviesynopsis: 'A neurosurgeon (played by Siddharth) and his wife (played by Andrea Jeremiah), a newly-wed couple move into a new neighborhood and soon realize that the house next door, inhabiting a little girl and her mother, is haunted. Although initially reluctant to believe the stories of supernatural elements, the doctor, after a close encounter with the possessed resorts to exorcism to help save the neighbors.',
-            movielanguage: 'Tamil',
+            moviename: 'Joker',
+            moviesynopsis: 'In Gotham City, mentally-troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: "The Joker".',
+            movielanguage: 'English',
             movierating: 'A',
-            moviegenre: 'Horror, Thriller',
-            moviecrew: 'Milind Rau (Director), Shreyaas Krishna (Director of Photography), Girishh Gopalakrishnan (Music Director)',
-            moviecast: 'Andrea Jeremiah, Siddharth Narayan',
-            movieduration: 137,
-            movieposterurl: 'images/aval-poster.jpg'
+            moviegenre: 'Crime, Drama, Thriller',
+            moviecrew: 'Todd Phillips, Scott Silver | 3 more credits » ',
+            moviecast: 'Joaquin Phoenix, Robert De Niro, Zazie Beetz |',
+            movieduration: 122,
+            movieposterurl: '.'
         };
 
     $scope.movielisting=[

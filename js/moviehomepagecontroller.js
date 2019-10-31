@@ -27,12 +27,12 @@ var apps= angular.module('myApp').controller('movieHomeCTRL',function($scope){
         };
 
     $scope.movielisting=[
-        {cinemas:"Sathyam Cinemas", showtime:["5.30pm","3.30pm","10.10pm"]}, 
-        {cinemas:"Escape Cinemas", showtime:["10.30pm","6.30pm"]},
-        {cinemas:"Luxe Cinemas", showtime:["12.30pm","3.30pm"]},
-        {cinemas:"Kamala Cinemas", showtime:["2.30pm","3.30pm","12.30pm"]},
-        {cinemas:"PVR Cinemas", showtime:["12.30pm","3.30pm","10.30pm"]},
-        {cinemas:"Palazzo Cinemas", showtime:["12.30pm","3.30pm"]}
+        {cinemas:"20th century Cinemas", showtime:["5.30pm","3.30pm","10.10pm"]}, 
+        {cinemas:"Anga Diamond Cinemas", showtime:["10.30pm","6.30pm"]},
+        {cinemas:"Anga Sky Cinemas", showtime:["12.30pm","3.30pm"]},
+        {cinemas:"Garden City Cinemas", showtime:["2.30pm","3.30pm","12.30pm"]},
+        {cinemas:"Junction Mall Cinemas", showtime:["12.30pm","3.30pm","10.30pm"]},
+        {cinemas:"Prestige Plaza Cinemas", showtime:["12.30pm","3.30pm"]}
     ];
     
     $scope.showDetails = function (record) {

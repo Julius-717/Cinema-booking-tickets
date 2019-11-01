@@ -15,12 +15,12 @@ app.controller("showtimecontroller",function($scope){
     $scope.showtimes= ["Noon", "Matinee", "Evening", "Night"];
 
     $scope.movieslist= [
-      	{moviename: "Joker", movielanguage: "Tamil", cinemas:"Anga Sky Cinemas", showtime:["5.30pm","3.30pm","10.10pm"], duration:"180mins"}, 
-		{moviename: "Sonic", movielanguage: "Tamil", cinemas:"Anga Diamond Cinemas", showtime:["10.30pm","6.30pm"], duration:"150mins"},
+      	{moviename: "Joker", movielanguage: "English", cinemas:"Anga Sky Cinemas", showtime:["5.30pm","3.30pm","10.10pm"], duration:"180mins"}, 
+		{moviename: "Sonic", movielanguage: "English", cinemas:"Anga Diamond Cinemas", showtime:["10.30pm","6.30pm"], duration:"150mins"},
 		{moviename: "Maleficent", movielanguage: "English",cinemas:"20th Century Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"},
-		{moviename: "Hellboy", movielanguage: "Malayalam",cinemas:"20th Century Cinemas", showtime:["2.30pm","3.30pm","12.30pm"], duration:"190mins"},
-		{moviename: "Darkphoenix", movielanguage: "Telugu", cinemas:"Garden City Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
-		{moviename: "Endgame", movielanguage: "Telugu", cinemas:"Prestige Plaza Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"},
+		{moviename: "Hellboy", movielanguage: "English",cinemas:"20th Century Cinemas", showtime:["2.30pm","3.30pm","12.30pm"], duration:"190mins"},
+		{moviename: "Darkphoenix", movielanguage: "English", cinemas:"Garden City Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
+		{moviename: "Endgame", movielanguage: "English", cinemas:"Prestige Plaza Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"},
 		{moviename: "AAladdin", movielanguage: "English", cinemas:"Junction Mall Cinemas", showtime:["12.30pm","3.30pm","10.30pm"], duration:"120mins"},
 		{moviename: "Angel has falle", movielanguage: "English", cinemas:"Anga Sky Cinemas", showtime:["12.30pm","3.30pm"], duration:"120mins"}
 	];

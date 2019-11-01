@@ -27,13 +27,13 @@ app.controller('moviesCtrl',['$scope', function($scope,filterFilter,$http) {
 
 
     $scope.comingsoon = [
-        {"movieId": "0012", "moviename" : "2.0", "imageurl" : "http://bit.ly/2m8noQh", "movielanguage":"tamil" },
-        {"movieId": "0013", "moviename" : "Tiger Zinda Hai", "imageurl" : "http://bit.ly/2jfQhZO", "movielanguage":"hindi" },
-        {"movieId": "0014", "moviename" : "Padmavati", "imageurl" : "http://bit.ly/2zwxOhx", "movielanguage":"hindi" },
-        {"movieId": "0015", "moviename" : "Sahoo", "imageurl" : "http://bit.ly/2zrThIU", "movielanguage":"telugu" },
-        {"movieId": "0016", "moviename" : "Justice League", "imageurl" : "http://bit.ly/2hgHG4J", "movielanguage":"english" },
-        {"movieId": "0017", "moviename" : "Star wars: Last Jedi", "imageurl" : "http://bit.ly/2AyL9UW", "movielanguage":"english" },
-        {"movieId": "0018", "moviename" : "Karuppu Raja Vellai Raja", "imageurl" : "http://bit.ly/2hY2rD4", "movielanguage":"tamil" }
+        {"movieId": "0012", "moviename" : "", "imageurl" : "http://bit.ly/2m8noQh", "movielanguage":"English" },
+        {"movieId": "0013", "moviename" : "", "imageurl" : "http://bit.ly/2jfQhZO", "movielanguage":"English" },
+        {"movieId": "0014", "moviename" : "", "imageurl" : "http://bit.ly/2zwxOhx", "movielanguage":"English" },
+        {"movieId": "0015", "moviename" : "", "imageurl" : "http://bit.ly/2zrThIU", "movielanguage":"English" },
+        {"movieId": "0016", "moviename" : "", "imageurl" : "http://bit.ly/2hgHG4J", "movielanguage":"English" },
+        {"movieId": "0017", "moviename" : "", "imageurl" : "http://bit.ly/2AyL9UW", "movielanguage":"English" },
+        {"movieId": "0018", "moviename" : "", "imageurl" : "http://bit.ly/2hY2rD4", "movielanguage":"English" }
     ];
 
 

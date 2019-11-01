@@ -27,13 +27,13 @@ app.controller('moviesCtrl',['$scope', function($scope,filterFilter,$http) {
 
 
     $scope.comingsoon = [
-        {"movieId": "0012", "moviename" : "Terminator 2019", "imageurl" : "http://bit.ly/2m8noQh", "movielanguage":"English" },
-        {"movieId": "0013", "moviename" : "Charlie`s angels", "imageurl" : "http://bit.ly/2jfQhZO", "movielanguage":"English" },
-        {"movieId": "0014", "moviename" : "Dolittle", "imageurl" : "http://bit.ly/2zwxOhx", "movielanguage":"English" },
-        {"movieId": "0015", "moviename" : "Wonder Woman2", "imageurl" : "http://bit.ly/2zrThIU", "movielanguage":"English" },
-        {"movieId": "0016", "moviename" : "Jumanji2", "imageurl" : "http://bit.ly/2hgHG4J", "movielanguage":"English" },
-        {"movieId": "0017", "moviename" : "World WarZ 2", "imageurl" : "http://bit.ly/2AyL9UW", "movielanguage":"English" },
-        {"movieId": "0018", "moviename" : "Avatar2", "imageurl" : "", "movielanguage":"English" }
+        {"movieId": "0012", "moviename" : "Terminator 2019", "imageurl" : "https://m.media-amazon.com/images/M/MV5BNzhlYjE5MjMtZDJmYy00MGZmLTgwN2MtZGM0NTk2ZTczNmU5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg", "movielanguage":"English" },
+        {"movieId": "0013", "moviename" : "Charlie`s angels", "imageurl" : "https://upload.wikimedia.org/wikipedia/en/2/2a/Charlie%27s_Angels_%28Official_2019_Film_Poster%29.png", "movielanguage":"English" },
+        {"movieId": "0014", "moviename" : "Dolittle", "imageurl" : "https://ib3.hulu.com/user/v3/artwork/4d8424ea-2f7d-434d-ac81-53618ab95517?base_image_bucket_name=image_manager&base_image=0a030eee-0d2f-482b-bc3d-9be5bef413f7&size=400x600&format=jpeg", "movielanguage":"English" },
+        {"movieId": "0015", "moviename" : "Wonder Woman2", "imageurl" : "https://cdn3.movieweb.com/i/movie/ViSNXyu24TcvKUMZS9MY9s10h7hMqx/384:50/Wonder-Woman-1984.jpg", "movielanguage":"English" },
+        {"movieId": "0016", "moviename" : "Jumanji2", "imageurl" : "https://i.ytimg.com/vi/JJxmIneArgE/maxresdefault.jpg", "movielanguage":"English" },
+        {"movieId": "0017", "moviename" : "World WarZ 2", "imageurl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKJXxjtpI7FKCYFjDHaa5-8bB5ADwnvlphtFllEgIxiKexry_Iw&s", "movielanguage":"English" },
+        {"movieId": "0018", "moviename" : "Avatar2", "imageurl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiXt6omBIjzjYAmMsl-b8EB1g2PonHMCJhlJPi4ldcpelWkuXL&s", "movielanguage":"English" }
     ];
 
 
